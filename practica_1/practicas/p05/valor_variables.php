@@ -15,7 +15,7 @@
         //9*10^3
     
         $c = (double) $a; //se convierte en un double 
-        //por lo que imprimira 9000.0
+        //por lo que imprimira 9000
         ?>
     </body>
     <h2>Valores Finales de $a, $b, $c</h2>

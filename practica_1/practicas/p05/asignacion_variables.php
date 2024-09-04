@@ -27,5 +27,16 @@
     echo "<p>\$c = $c</p>";
     ?>
 
+    <h2>Explicación</h2>
+    <?php
+    echo "<p>Después de la primera asignación, \$c es una referencia de \$a. Esto significa que cualquier cambio en \$a se refleja en \$c.</p>";
+    echo "<p>Después de la segunda asignación, tanto \$a como \$b apuntan al mismo valor 'PHP server', y dado que \$c sigue siendo una referencia a \$a, también se actualiza a 'PHP server'.</p>";
+
+    // Liberar variables
+    unset($a, $b, $c);
+    ?>
+    </body>
+    </html>
+
 </body>
 </html>

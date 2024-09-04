@@ -15,5 +15,17 @@
     echo "<p>\$b = $b</p>";
     echo "<p>\$c = $c</p>";
     ?>
+
+    <h2>Segunda Asignación</h2>
+    <?php
+    $a = "PHP server";
+    $b = &$a;
+
+    // Mostrar los contenidos después de la segunda asignación
+    echo "<p>\$a = $a</p>";
+    echo "<p>\$b = $b</p>";
+    echo "<p>\$c = $c</p>";
+    ?>
+
 </body>
 </html>

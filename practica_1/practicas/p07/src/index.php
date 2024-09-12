@@ -53,6 +53,15 @@ include 'C:\xampp\htdocs\tecweb\practica_1\practicas\p07\src\funciones.php';
         }
     ?>
 
+    <h2>Ejercicio 4</h2>
+    <p>Crear un arreglo de caracteres ASCII y mostrarlo en una tabla.</p>
+    <?php
+        $arreglo = crearArregloAscii();
+        echo "<table border='1'>";
+        foreach ($arreglo as $key => $value) {
+            echo "<tr><td>$key</td><td>$value</td></tr>";
+        }
+        echo "</table>";
+    ?>
 </body>
 </html>
-

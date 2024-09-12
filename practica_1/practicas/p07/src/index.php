@@ -1,8 +1,5 @@
 <?php
-// Incluye el archivo de funciones
 include 'C:\xampp\htdocs\tecweb\practica_1\practicas\p07\src\funciones.php';
-
-
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +21,22 @@ include 'C:\xampp\htdocs\tecweb\practica_1\practicas\p07\src\funciones.php';
                 echo '<h3>R= El número '.$num.' NO es múltiplo de 5 y 7.</h3>';
             }
         }
+    ?>
+
+    <h2>Ejercicio 2</h2>
+    <p>Generar repetitivamente 3 números aleatorios hasta obtener una secuencia impar, par, impar.</p>
+    <?php
+        list($matriz, $iteraciones) = generarSecuenciaImparParImpar();
+        echo "<p>$iteraciones iteraciones y " . (3 * $iteraciones) . " números obtenidos.</p>";
+        echo "<table border='1'>";
+        foreach ($matriz as $fila) {
+            echo "<tr>";
+            foreach ($fila as $numero) {
+                echo "<td>$numero</td>";
+            }
+            echo "</tr>";
+        }
+        echo "</table>";
     ?>
 </body>
 </html>

@@ -7,7 +7,7 @@ include 'C:\xampp\htdocs\tecweb\practica_1\practicas\p07\src\funciones.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica 7</title>
+    <title>Práctica 4</title>
 </head>
 <body>
     <h2>Ejercicio 1</h2>
@@ -38,5 +38,21 @@ include 'C:\xampp\htdocs\tecweb\practica_1\practicas\p07\src\funciones.php';
         }
         echo "</table>";
     ?>
+
+    <h2>Ejercicio 3</h2>
+    <p>Encontrar el primer número entero múltiplo de un número dado usando while y do-while.</p>
+    <?php
+        if(isset($_GET['multiplo'])) {
+            $multiplo = $_GET['multiplo'];
+            $resultadoWhile = encontrarMultiploConWhile($multiplo);
+            $resultadoDoWhile = encontrarMultiploConDoWhile($multiplo);
+            echo "<p>Primer múltiplo con while: $resultadoWhile</p>";
+            echo "<p>Primer múltiplo con do-while: $resultadoDoWhile</p>";
+        } else {
+            echo "<p>Por favor, proporciona un valor para el parámetro 'multiplo' en la URL.</p>";
+        }
+    ?>
+
 </body>
 </html>
+

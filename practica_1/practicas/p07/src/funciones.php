@@ -1,10 +1,9 @@
 <?php
-
-// Función para comprobar si un número es múltiplo de 5 y 7
+// es múltiplo de 5 y 7
 function esMultiploDe5Y7($numero) {
     return $numero % 5 == 0 && $numero % 7 == 0;
 }
-// impar, par, impar
+// secuencia impar, par, impar
 function generarSecuenciaImparParImpar() {
     $matriz = [];
     $iteraciones = 0;
@@ -39,7 +38,8 @@ function encontrarMultiploConDoWhile($numero) {
 
     return $aleatorio;
 }
-// arreglo de caracteres ASCII
+
+// Función para crear un arreglo de caracteres ASCII
 function crearArregloAscii() {
     $arreglo = [];
     for ($i = 97; $i <= 122; $i++) {

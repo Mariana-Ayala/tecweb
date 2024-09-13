@@ -75,6 +75,19 @@ include 'C:\xampp\htdocs\tecweb\practica_1\practicas\p07\src\funciones.php';
         </select><br>
         <input type="submit" value="Enviar">
     </form>
+
+    <h2>Ejercicio 6</h2>
+    <h1>Consulta Vehicular</h1>
+
+    <form action="consulta.php" method="POST">
+        <label for="matricula">Consulta por matrícula:</label>
+        <input type="text" id="matricula" name="matricula" placeholder="LLLNNNN">
+        <input type="submit" value="Consultar">
+    </form>
+
+    <form action="consulta.php" method="POST">
+        <input type="hidden" name="todos" value="true">
+        <input type="submit" value="Mostrar todos los autos">
+    </form>
 </body>
 </html>
-

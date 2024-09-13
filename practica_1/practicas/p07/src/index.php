@@ -7,7 +7,7 @@ include 'C:\xampp\htdocs\tecweb\practica_1\practicas\p07\src\funciones.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica 4</title>
+    <title>Práctica 7</title>
 </head>
 <body>
     <h2>Ejercicio 1</h2>
@@ -63,5 +63,18 @@ include 'C:\xampp\htdocs\tecweb\practica_1\practicas\p07\src\funciones.php';
         }
         echo "</table>";
     ?>
+
+    <h2>Ejercicio 5</h2>
+    <h2>Ingrese su edad y sexo</h2>
+    <form action="respuesta.php" method="post">
+        Edad: <input type="number" name="edad" required><br>
+        Sexo: 
+        <select name="sexo" required>
+            <option value="femenino">Femenino</option>
+            <option value="masculino">Masculino</option>
+        </select><br>
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
+

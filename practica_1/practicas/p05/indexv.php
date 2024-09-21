@@ -87,6 +87,11 @@ e: FALSE
 Nombre del sistema operativo (servidor): WINNT
 Idioma del navegador (cliente): es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
     </pre>
+    <p>
+   <a href="https://validator.w3.org/check?uri=referer">
+      <img src="https://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" />
+   </a>
+</p>
 
 </body>
 </html>

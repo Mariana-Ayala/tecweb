@@ -1,6 +1,6 @@
 <?php
 // Conexión a la base de datos
-@$link = new mysqli('localhost', 'root', 'Retosvergas10*', 'marketzone');	
+@$link = new mysqli('localhost', 'root', '12345678a', 'marketzone');	
 
 // Comprobar la conexión
 if ($link->connect_errno) {
@@ -16,9 +16,12 @@ $detalles = $_POST['detalles'];
 $unidades = $_POST['unidades'];
 $imagen   = $_POST['imagen'];
 
-// Crear la consulta de inserción
-$sql = "INSERT INTO productos (nombre, marca, modelo, precio, detalles, unidades, imagen, eliminado) 
-        VALUES ('{$nombre}', '{$marca}', '{$modelo}', {$precio}, '{$detalles}', {$unidades}, '{$imagen}', 0)";
+// Comentar la consulta anterior
+// $sql = "INSERT INTO productos VALUES (null, '{$nombre}', '{$marca}', '{$modelo}', {$precio}, '{$detalles}', {$unidades}, '{$imagen}')";
+
+// Nueva consulta usando nombres de columnas
+$sql = "INSERT INTO productos (nombre, marca, modelo, precio, detalles, unidades, imagen) 
+        VALUES ('{$nombre}', '{$marca}', '{$modelo}', {$precio}, '{$detalles}', {$unidades}, '{$imagen}')";
 
 // Ejecutar la consulta
 if ($link->query($sql)) {

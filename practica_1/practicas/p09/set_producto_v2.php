@@ -1,6 +1,6 @@
 <?php
 // Conexión a la base de datos
-@$link = new mysqli('localhost', 'root', '12345678a', 'marketzone');	
+@$link = new mysqli('localhost', 'root', 'Retosvergas10*', 'marketzone');	
 
 // Comprobar la conexión
 if ($link->connect_errno) {

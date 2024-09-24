@@ -17,11 +17,11 @@ $unidades = $_POST['unidades'];
 $imagen   = $_POST['imagen'];
 
 // Comentar la consulta anterior
-// $sql = "INSERT INTO productos VALUES (null, '{$nombre}', '{$marca}', '{$modelo}', {$precio}, '{$detalles}', {$unidades}, '{$imagen}')";
+// $sql = "INSERT INTO productos VALUES (null, '{$nombre}', '{$marca}', '{$modelo}', {$precio}, '{$detalles}', {$unidades}, '{$imagen}',0)";
 
 // Nueva consulta usando nombres de columnas
 $sql = "INSERT INTO productos (nombre, marca, modelo, precio, detalles, unidades, imagen) 
-        VALUES ('{$nombre}', '{$marca}', '{$modelo}', {$precio}, '{$detalles}', {$unidades}, '{$imagen}')";
+        VALUES ('{$nombre}', '{$marca}', '{$modelo}', {$precio}, '{$detalles}', {$unidades}, '{$imagen}',0)";
 
 // Ejecutar la consulta
 if ($link->query($sql)) {

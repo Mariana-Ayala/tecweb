@@ -34,3 +34,9 @@ if (isset($_POST['id']) && isset($_POST['nombre']) && isset($_POST['marca']) && 
 // Cierra la conexión
 mysqli_close($link);
 ?>
+<!-- Opciones después de registrar el producto -->
+<h4>¿Qué te gustaría hacer ahora?</h4>
+<ul>
+    <li><a href="get_productos_vigentes_v2.php">Ver productos vigentes</a></li>
+    <li><a href="get_productos_xhtml_v2.php?tope=50">Ver todos los productos</a></li>
+</ul>

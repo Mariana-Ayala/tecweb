@@ -19,7 +19,6 @@
         <ul class="navbar-nav ml-auto"></ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" name="search" id="search" type="search" placeholder="ID, marca o descripción" aria-label="Search">
-            <!-- Eliminar onclick en el botón de búsqueda -->
             <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
           </form>
       </div>
@@ -39,10 +38,7 @@
                   <textarea class="form-control" id="description" cols="30" rows="10" placeholder="JSON de producto"></textarea>
                 </div>
                 <input type="hidden" id="productId">
-                <!-- Eliminar onclick en el botón de agregar producto -->
-                <button class="btn btn-primary btn-block text-center" type="submit">
-                  Agregar Producto
-                </button>
+                <button class="btn btn-primary btn-block text-center" type="submit">Agregar Producto</button>
               </form>
             </div>
           </div>
@@ -71,11 +67,11 @@
       </div>
     </div>
 
-    <!-- Des-comentar la referencia a JQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
     <!-- Lógica del Frontend -->
     <script src="app.js"></script>
   </body>
+
 </html>
